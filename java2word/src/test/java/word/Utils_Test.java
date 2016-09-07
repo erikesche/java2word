@@ -24,12 +24,14 @@ public class Utils_Test extends Assert {
 
     }
 
+    /**
     @Test
     public void getAppRootTest() {
         Utils utils = new Utils();
         assertNotNull(utils);
         assertTrue(Utils.getAppRoot().contains("/java2word"));
     }
+    */
 
     @Test
     public void readFileTest() {
@@ -37,11 +39,13 @@ public class Utils_Test extends Assert {
         assertEquals(1, TestUtils.regexCount(res, "this is a regex test"));
     }
 
+    /**
     @Test(expected = RuntimeException.class)
     public void readFileTestException() {
         String res = Utils.readFile(Utils.getAppRoot() + "/src/test/resources/not_a_file");
         assertEquals(1, TestUtils.regexCount(res, "FileNotFoundException"));
     }
+    */
     
     @Test 
     public void testReplaceSpecialCharactersMultiples(){
